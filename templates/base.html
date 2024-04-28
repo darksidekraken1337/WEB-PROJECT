@@ -5,7 +5,8 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">    <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.css') }}" >
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
     <title>{% block title %}{% endblock %}</title>
 </head>
 <body class="d-flex h-100 text-center text-bg-dark">
@@ -29,26 +30,16 @@
 <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
   <header class="mb-auto">
     <div>
-      <h3 class="float-md-start mb-0">Cover</h3>
-      <nav class="nav nav-masthead justify-content-center float-md-end">
-        <a class="nav-link fw-bold py-1 px-1 active" aria-current="page" href="#">Home</a>
-        <a class="nav-link fw-bold py-1 px-3" href="#">Features</a>
-        <a class="nav-link fw-bold py-1 px-1" href="#">Contact</a>
+      <h1 class="float-md-start mb-0">Chop Shop</h1>
+      <nav class="d-flex nav-masthead justify-content-end float-md-end">
+        <a class="hover_red nav-link fw-bold py-1 px-1 active" aria-current="page" href="http://127.0.0.1:5000/">Home</a>
+        <a class="hover_red font_color_fuchsia nav-link fw-bold py-1 px-3" href="#">Features</a>
+        <a class="hover_red nav-link fw-bold py-1 px-1" href="http://127.0.0.1:5000/about">Contact</a>
       </nav>
     </div>
   </header>
     {% block body %}{% endblock %}
-  <main class="px-3">
-    <h1>Cover your page.</h1>
-    <p class="lead">Cover is a one-page template for building simple and beautiful home pages. Download, edit the text, and add your own fullscreen background photo to make it your own.</p>
-    <p class="lead">
-      <a href="#" class="btn btn-lg btn-light fw-bold border-white bg-white">Learn more</a>
-    </p>
-  </main>
-
 </div>
-<script src="/docs/5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-
 
 </body>
 </html>

@@ -1,3 +1,19 @@
-body {
+h1[data-text]{
+    color: red;
+}
+.box {
+    height: 500px;
     background-color: blue;
+}
+.red {
+    background-color: red
+}
+.lol_color {
+    background-color: #f8d7da
+}
+.hover_red:hover {
+    color: #ff0000
+}
+.font_color_fuchsia {
+    color: fuchsia
 }
