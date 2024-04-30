@@ -11,5 +11,13 @@ def index():
 def about():
     return render_template('about.html')
 
+@app.route('/black')
+def black():
+    return render_template('black.html')
+
+@app.route('/grey')
+def grey():
+    return render_template('grey.html')
+
 if __name__ == '__main__':
     app.run(debug=True) # автоматическое изменение на сайте при f5

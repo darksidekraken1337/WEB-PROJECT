@@ -1,3 +1,11 @@
+#text {
+	position: static;
+	right: 150px;
+	text-align: center;
+    top: 150px;
+
+}
+
 #front {
    background-image: url('black t-shirt_back.png');
    height: 70px;
@@ -9,9 +17,17 @@
     height: 70px;
     width: 120px;
 }
-h1 {
+.text_black p {
     font-family: Tangerine;
-    font-size: 60px;
+    font-size: 20px;
+}
+h1{
+    font-family: Tangerine;
+    font-size: 80px;
+}
+h3{
+    font-family: Tangerine;
+    font-size: 35px;
 }
 p {
     font-family: Tangerine;
@@ -41,11 +57,14 @@ a {
     background-color: #f8d7da
 }
 .hover_red:hover {
-    color: #ff0000
+    color: #999c03
 }
 .font_color_fuchsia {
     color: fuchsia
 }
 .bg_color {
     background-color: black
+}
+p {
+    text-align: center
 }

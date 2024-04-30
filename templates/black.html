@@ -1,0 +1,54 @@
+{% extends 'base.html' %}
+
+{% block title %}
+Black T-Shirt "Yandex Lyceum"
+{% endblock %}
+
+{% block body %}
+<h1>Yandex Lyceum</h1>
+<div class="container">
+	<div class="all">
+			<input checked type="radio" name="respond" id="desktop">
+				<article id="slider">
+						<input checked type="radio" name="slider" id="switch1">
+						<input type="radio" name="slider" id="switch2">
+					<div id="slides">
+						<div id="overflow">
+							<div class="image">
+								<article><img src="{{ url_for('static', filename='images/black t-shirt_front.png') }}"></article>
+								<article><img src="{{ url_for('static', filename='images/black t-shirt_back.png') }}"></article>
+
+							</div>
+						</div>
+					</div>
+					<div id="controls">
+						<label for="switch1"></label>
+						<label for="switch2"></label>
+
+					</div>
+					<div id="active">
+						<label for="switch1"></label>
+						<label for="switch2"></label>
+
+					</div>
+				</article>
+	</div>
+	<main class="container">
+		<div id="text">
+		  <div class="row justify-content-end">
+			<div class="text_black col-4">
+			  <h3 class="pb-4 mb-4 fst-italic border-bottom">
+				Футболка "Яндекс Лицей"
+			  </h3>
+				<h3 class="blog-post-meta">10 000 rub</h3>
+				<hr>
+				<p class="fst-italic">Черную футболку сшили из мягкого хлопкового джерси, которое произвели из длинноволокнистого сырья ценных сортов. Материал хорошо пропускает воздух, поэтому в изделии не будет жарко. Спереди модель украсили крупным зеленым принтом в виде логотипа бренда, основанного Стаценко Даниилом.</p>
+				<hr>
+				<p class="fst-italic">Состав: Хлопок: Сто Процентов</p>
+				<p class="fst-italic">Страна производства: Российская Федерация</p>
+			</div>
+		  </div>
+		</div>
+	</main>
+</div>
+{% endblock %}
